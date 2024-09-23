@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pratos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro de Pratos</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="nome-prato">Nome do Prato:</label>
+            <input type="text" id="nome-prato" name="nome-prato" required>
+
+            <label for="descricao">Descrição do Prato:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <label for="tempo-preparo">Tempo de Preparo (minutos):</label>
+            <input type="number" id="tempo-preparo" name="tempo-preparo" min="1" required>
+
+            <label for="valor">Valor do Prato (R$):</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione</option>
+                <option value="drink-alcoolico">Drink Alcoólico</option>
+                <option value="drink-nao-alcoolico">Drink Não Alcoólico</option>
+                <option value="principal">Prato Principal</option>
+                <option value="entrada">Entrada</option>
+                <option value="petisco">Petisco</option>
+            </select>
+
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho" name="tamanho" required>
+                <option value="">Selecione</option>
+                <option value="individual">Individual</option>
+                <option value="casal">Casal</option>
+                <option value="familia">Família</option>
+            </select>
+
+            <label for="imagem">Upload de Imagem:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+            <button type="submit">Cadastrar Prato</button>
+        </form>
+    </div>
+</body>
+
+</html>
